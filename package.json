@@ -14,6 +14,7 @@
     "url": "https://github.com/heroku/node-js-getting-started"
   },
   "dependencies": {
-    "express": "3.0.0"
+    "express": "3.0.0",
+    "socket.io": "^1.3.2"
   }
 }
