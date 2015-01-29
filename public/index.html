@@ -7,15 +7,6 @@
   <link href="css/main.css" rel="stylesheet" type="text/css" />
   <title>Codenatic || puzzle battle</title>
 
-  <script src="js/socket.io.js"></script>
-  <script>
-    var socket = io.connect('http://localhost');
-    socket.on('news', function (data) {
-      console.log(data);
-      socket.emit('my other event', { my: 'data' });
-    });
-  </script>
-
 </head>
 <body>
 
@@ -37,6 +28,7 @@
 </div>
 
 <script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/socket.io.js"></script>
 <script src="js/game.js"></script>
 
 <script>

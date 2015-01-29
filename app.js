@@ -19,18 +19,6 @@ app.get('/', function (req, res) {
 
 });
 
-io.on('connection', function (socket) {
-
-	socket.emit('news', { hello: 'world' });
-
-	socket.on('my other event', function (data) {
-
-			console.log(data);
-
-	});
-
-});
-
 app.listen(app.get('port'), function() {
 	console.log("App is running at localhost:" + app.get('port'));
 });
