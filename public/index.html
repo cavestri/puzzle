@@ -23,7 +23,12 @@
     <div id="image"></div>
   </div>
 
+
   <div id="footer">&copy; Franco Cavestri | Images by <a href="unsplash.com">Unsplash</a></div>
+
+  <button id="puzzleBattle" class="battleBtn">Puzzle Battle</button>
+
+  <ul id="connectedUsers"></ul>
 
 </div>
 
@@ -36,6 +41,21 @@
   document.addEventListener("DOMContentLoaded", function () {
 
     game.startGame();
+    var socket = io.connect();
+
+    $('#puzzleBattle').on('click', function () {
+
+      var newUser = window.prompt('Enter your name : ');
+
+      socket.emit('addUser', { user : newUser })
+
+      socket.on('userConects', function (data) {
+
+        $('#connectedUsers').append('<li>' + data + '</li>');
+
+      });
+
+    });
 
   });
 

@@ -101,3 +101,11 @@ a {
   color: grey;
   text-decoration: none;
 }
+
+.battleBtn {
+  padding: 5px 10px;
+  border-radius: 4px;
+  border: none;
+  background-color: orange;
+  color: #fff;
+}
