@@ -21,9 +21,10 @@ body {
 }
 
 #container {
-  width: 960px;
+  width: 100%;
   height: 600px;
   margin: 50px auto;
+  text-align: center;
 }
 
 #top {
@@ -116,7 +117,7 @@ a {
 .players-board {
   display: inline-block;
   vertical-align: top;
-    margin-top: -50px;
+  margin-top: -50px;
 }
 
 .players-label {
@@ -131,6 +132,7 @@ a {
   padding: 0;
   margin: 0;
   border: 22px solid #252525;
+  text-align: left;
 }
 
 .conected-users li {
@@ -147,6 +149,56 @@ a {
   margin: 0 0 0 5px;
   padding: 0;
 }
+
+.progress-board {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.progress-list {
+  width: 300px;
+  height: 296px;
+  background: #fff;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border: 22px solid #252525;
+  text-align: left;
+}
+
+.progress-list li {
+  margin: 10px;
+  padding: 0;
+}
+
+.progress-list progress {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  border: none;
+  height: 5px;
+  border-radius: 9px;
+  width: 95%;
+  display: block;
+  /* Important Thing */
+  -webkit-appearance: none;
+}
+
+
+/* All good till now. Now we'll style the background */
+progress::-webkit-progress-bar {
+  background: transparent;
+  border-radius: 50px;
+  box-shadow: 0px 0px 10px 5px rgba(137, 137, 136, 0.75);
+}
+
+/* Now the value part */
+progress::-webkit-progress-value {
+  border-radius: 50px;
+  box-shadow: inset 0 1px 1px 0 rgba(82, 188, 71, 0.86);
+}
+
+
 
 /*
   HELPERS
