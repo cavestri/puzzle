@@ -3,7 +3,7 @@ var app = express();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
 
-
+var users = [];
 
 app.configure(function() {
 
@@ -26,7 +26,20 @@ io.on('connection', function(socket){
 
   socket.on('addUser', function (data) {
 
-    socket.emit('userConects',data.user)
+    //console.log(users.length);
+    //
+    //if(users.length < 3) {
+
+      users.push(data);
+
+      socket.emit('userConects', users);
+
+    //} else {
+    //
+    //  socket.emit('noMoreUsers');
+    //  return false;
+    //
+    //}
 
   });
 

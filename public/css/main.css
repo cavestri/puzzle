@@ -21,7 +21,7 @@ body {
 }
 
 #container {
-  width: 800px;
+  width: 960px;
   height: 600px;
   margin: 50px auto;
 }
@@ -42,6 +42,7 @@ body {
   height: 300px;
   margin: 0px auto;
   border: 20px solid #252525;
+  display: inline-block;
 }
 
 #image {
@@ -103,9 +104,71 @@ a {
 }
 
 .battleBtn {
+  width: 160px;
+  margin: 5px 0 0 2px;
   padding: 5px 10px;
   border-radius: 4px;
   border: none;
   background-color: orange;
   color: #fff;
+}
+
+.players-board {
+  display: inline-block;
+  vertical-align: top;
+    margin-top: -50px;
+}
+
+.players-label {
+  color: #fff;
+}
+
+.conected-users {
+  width: 120px;
+  height: 296px;
+  background: #fff;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border: 22px solid #252525;
+}
+
+.conected-users li {
+  color: rgb(118, 118, 118);
+  margin: 0;
+  padding: 0;
+}
+
+.conected-users li:first-child {
+  margin-top: 5px;
+}
+
+.conected-users p {
+  margin: 0 0 0 5px;
+  padding: 0;
+}
+
+/*
+  HELPERS
+*/
+
+.trans {
+  -webkit-transition:all .3s ease-in-out;
+  -moz-transition:all .3s ease-in-out;
+  -o-transition:all .3s ease-in-out;
+  transition:all .3s ease-in-out;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1; /* ie 6/7 */
 }

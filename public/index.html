@@ -10,10 +10,16 @@
 </head>
 <body>
 
-<div id="container">
+<div id="container" class="clearfix">
 
   <div id="top">
     <h1 id="title">Puzzle</h1>
+  </div>
+
+  <div id="playersBoard" class="players-board" >
+    <p class="players-label">Conected players</p>
+    <ul id="connectedUsers" class="conected-users trans"></ul>
+    <button id="puzzleBattle" class="battleBtn">Puzzle Battle</button>
   </div>
 
   <div id="board">
@@ -25,10 +31,6 @@
 
 
   <div id="footer">&copy; Franco Cavestri | Images by <a href="unsplash.com">Unsplash</a></div>
-
-  <button id="puzzleBattle" class="battleBtn">Puzzle Battle</button>
-
-  <ul id="connectedUsers"></ul>
 
 </div>
 
@@ -51,7 +53,21 @@
 
       socket.on('userConects', function (data) {
 
-        $('#connectedUsers').append('<li>' + data + '</li>');
+        console.log(data);
+
+        $('#connectedUsers').empty();
+
+        for (var i = 0; i < data.length; i++) {
+
+          $('#connectedUsers').append('<li><p>' + data[i].user + '</p></li>');
+
+        }
+
+      });
+
+      socket.on('noMoreUsers', function () {
+
+        alert('No more users can be added')
 
       });
 
