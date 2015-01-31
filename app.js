@@ -16,7 +16,7 @@ app.configure(function() {
 
 io.on('connection', function(socket){
 
-  console.log('a user connected');
+  console.log('new user connected');
 
   socket.on('disconnect', function(){
 
@@ -26,20 +26,16 @@ io.on('connection', function(socket){
 
   socket.on('addUser', function (data) {
 
-    //console.log(users.length);
-    //
-    //if(users.length < 3) {
+    users.push(data);
 
-      users.push(data);
+    socket.emit('userConects', users);
+    socket.broadcast.emit('userConects', users);
 
-      socket.emit('userConects', users);
+  });
 
-    //} else {
-    //
-    //  socket.emit('noMoreUsers');
-    //  return false;
-    //
-    //}
+  socket.on('loadUsers', function () {
+
+    socket.emit('userConects', users);
 
   });
 
