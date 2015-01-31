@@ -53,7 +53,7 @@
 
       for (var i = 0; i < data.length; i++) {
 
-        $('#connectedUsers').append('<li><p>' + data[i].user + '</p></li>');
+        $('#connectedUsers').append('<li id="' + data[i].id + '"><p>' + data[i].name + '</p></li>');
 
       }
 
@@ -65,6 +65,12 @@
       var newUser = window.prompt('Enter your name : ');
 
       socket.emit('addUser', { user : newUser });
+
+    });
+
+    socket.on('disconectUser', function (data) {
+
+      $('#'+data).remove();
 
     });
 

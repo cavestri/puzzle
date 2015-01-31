@@ -22,11 +22,27 @@ io.on('connection', function(socket){
 
     console.log('user disconnected');
 
+    socket.broadcast.emit('disconectUser', socket.id);
+
+    for(var key in users) {
+
+      if(users[key].id === socket.id) {
+
+        users.splice(key,1);
+
+      }
+    }
+
   });
 
   socket.on('addUser', function (data) {
 
-    users.push(data);
+    var user = {
+      id: socket.id,
+      name: data.user
+    }
+
+    users.push(user);
 
     socket.emit('userConects', users);
     socket.broadcast.emit('userConects', users);
@@ -35,7 +51,11 @@ io.on('connection', function(socket){
 
   socket.on('loadUsers', function () {
 
-    socket.emit('userConects', users);
+    if(users){
+
+      socket.emit('userConects', users);
+
+    }
 
   });
 
