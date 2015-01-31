@@ -30,7 +30,7 @@ Open you browser and type "localhost:5000" and there you go!
 
 ### NPM Tech
 
-For this implementation I have use the followinf node.js modules:
+For this implementation I have use the following node.js modules:
 
 * [express] - An MVC on the server side for node.js
 * [socket.io] - node.js realtime framework server
