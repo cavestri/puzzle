@@ -1,43 +1,53 @@
-PUZZLE
-=================================
+# Puzzle Battle
 
-A simple Puzzle game made with Jquery.
+Puzzle Battle is a "work in progress" fork for the games section of [codenatic].
 
-I have made this Puzzle game just for fun, i'm pretty sure that the logic can be improved a lot but... 
+> I started this project as a personal challenge of create a real time multiplayer 
+> HTML5 game. The main goal for me was to implement the use of Socket.IO in an already in use HTML5 game.
 
-Usage
-=====
 
-Just change the block position using the mouse pointer to clicking on them.
+### Installation
 
-On Line Version
-=============
+install node.js:
 
-You can check a live version [here](http://codenatic.com/projects/puzzle/) 
+go to [nodejs] and just follow the instructions according to you OS.
 
-**Have Fun!**
+once that node.js gets installed
+```sh
+$ git clone https://github.com/FrancoAguilera/puzzle.git
+```
 
-Licence
-=======
+```sh
+$ cd /path/to/cloned/repo/
+$ npm install
+```
+At this point the app is set up and ready to work, but before that 
+```sh
+$ cd /path/to/cloned/repo/
+$ node app.js
+```
+Open you browser and type "localhost:5000" and there you go!
 
-The MIT License (MIT)
+### NPM Tech
 
-Copyright (c) 2015 Franco Cavestri
+For this implementation I have use the followinf node.js modules:
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+* [express] - An MVC on the server side for node.js
+* [socket.io] - node.js realtime framework server
+* [jquery] - is there enything more to add ?
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+### Development
+
+Want to contribute? Great!
+
+* Clone the repo 
+* make some changes 
+* send a pull request
+
+
+[codenatic]:http://codenatic.com/
+[nodejs]:http://nodejs.org/
+[express]:https://www.npmjs.com/package/express
+[socket.io]:https://www.npmjs.com/package/socket.io
+[jquery]:http://jquery.com/
