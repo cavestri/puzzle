@@ -31,6 +31,7 @@ io.on('connection', function(socket){
         users.splice(key,1);
 
       }
+
     }
 
   });
