@@ -79,8 +79,11 @@ game.changePart = function() {
         s.css('background-position-y', y);
         s.removeClass('selected');
         game.selected = "";
-        console.log(game.check());
+
+				socket.emit('progress', game.check());
+
         game.checkParts();
+
     }
 }
 
