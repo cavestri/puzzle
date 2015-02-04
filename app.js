@@ -65,12 +65,15 @@ io.on('connection', function(socket){
 
 		var prog = (Math.ceil((val*100)/18));
 
+		console.log(prog);
+
 		var user = {
 			user: socket.id,
 			progress: prog
 		}
 
 		socket.broadcast.emit('progressBars', user);
+
 
 	});
 
