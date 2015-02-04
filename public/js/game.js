@@ -79,8 +79,30 @@ game.changePart = function() {
         s.css('background-position-y', y);
         s.removeClass('selected');
         game.selected = "";
+        console.log(game.check());
         game.checkParts();
     }
+}
+
+game.check = function () {
+
+    var amount = 0;
+    var parts = $('.pics');
+
+    for (var i = 0; i < parts.length; i++) {
+        var org = game.success[i].join(' ');
+        var piece = $(parts[i]).css('background-position');
+
+        if(org === piece) {
+
+            amount++;
+
+        }
+
+    }
+
+    return amount;
+
 }
 
 game.startGame = function() {
