@@ -1,5 +1,8 @@
 var socket = io.connect();
 
+var newUser = window.prompt('Enter your name : ');
+socket.emit('addUser', { user : newUser });
+
 socket.emit('loadUsers');
 
 socket.on('userConects', function (data) {
@@ -14,18 +17,13 @@ socket.on('userConects', function (data) {
 
 });
 
-$('#puzzleBattle').on('click', function () {
-	var newUser = window.prompt('Enter your name : ');
-	socket.emit('addUser', { user : newUser });
-});
-
 socket.on('disconectUser', function (data) {
 	$('#'+data).remove();
+	$('.'+data).closest('li').remove();
 });
 
 socket.on('progressBars', function (data) {
 
-	console.log(data);
 	$('.' + data.user).attr('value', data.progress);
 
 });
