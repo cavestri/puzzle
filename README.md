@@ -1,43 +1,67 @@
-PUZZLE
-=================================
+# Puzzle Battle
 
-A simple Puzzle game made with Jquery.
+> I started this project as a personal challenge of create a real time multiplayer
+> HTML5 game. The main goal for me was to implement the use of Socket.IO in an already in use HTML5 game.
 
-I have made this Puzzle game just for fun, i'm pretty sure that the logic can be improved a lot but... 
+Puzzle Battle is a "work in progress" fork for the games section of [codenatic].
+The main idea is to complete the puzzle before your friends do it, for that I have created a
+progress bar list of each user (where you can see your friends progress but you can't see yours),
+there are still a lot of work to do but for now as an MVP this will do the job.
 
-Usage
-=====
 
-Just change the block position using the mouse pointer to clicking on them.
+### Installation
 
-On Line Version
-=============
+install node.js:
 
-You can check a live version [here](http://codenatic.com/projects/puzzle/) 
+go to [nodejs] and just follow the instructions according to your OS.
 
-**Have Fun!**
+once that node.js gets installed
 
-Licence
-=======
+```sh
+$ git clone https://github.com/FrancoAguilera/puzzle.git
+```
 
-The MIT License (MIT)
+```sh
+$ cd /path/to/cloned/repo/
+$ npm install
+```
+> The "npm install" command will download all the project needed packages into you local folder.
 
-Copyright (c) 2015 Franco Cavestri
+At this point the app is set up and ready to work, but before that 
+```sh
+$ cd /path/to/cloned/repo/
+$ node app.js
+```
+Open you browser and type "localhost:5000" and there you go!
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+### Usage
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+- Find your local ip address. e.g.: 192.168.0.4
+- Aim to the port 5000 e.g.: http://192.168.0.4:5000
+- Hit that url from any computer on you local network.
+
+
+### NPM Tech
+
+For this implementation I have use the following node.js modules:
+
+* [express] - An MVC on the server side for node.js
+* [socket.io] - node.js realtime framework server
+* [jquery] - is there enything more to add ?
+
+
+### Development
+
+Want to contribute? Great!
+
+* Clone the repo 
+* make some changes 
+* send a pull request
+
+
+[codenatic]:http://codenatic.com/
+[nodejs]:http://nodejs.org/
+[express]:https://www.npmjs.com/package/express
+[socket.io]:https://www.npmjs.com/package/socket.io
+[jquery]:http://jquery.com/
