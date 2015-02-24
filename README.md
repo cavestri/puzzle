@@ -1,6 +1,8 @@
 PUZZLE
 =================================
 
+![Puzzle](http://codenatic.com/blog/wp-content/uploads/2015/01/puzzle-766x510.jpg "Awesome Puzzle!")
+
 A simple Puzzle game made with Jquery.
 
 I have made this Puzzle game just for fun, i'm pretty sure that the logic can be improved a lot but... 
