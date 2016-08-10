@@ -1,7 +1,7 @@
 PUZZLE
 =================================
 
-![Puzzle](http://codenatic.com/blog/wp-content/uploads/2015/01/puzzle-766x510.jpg "Awesome Puzzle!")
+![Puzzle](http://codenatic.com/wp-content/uploads/2016/01/puzzle.jpg "Awesome Puzzle!")
 
 A simple Puzzle game made with Jquery.
 
