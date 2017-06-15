@@ -1,7 +1,7 @@
 PUZZLE
 =================================
 
-![Puzzle](http://codenatic.com/wp-content/uploads/2016/01/puzzle.jpg "Awesome Puzzle!")
+![Puzzle](https://raw.githubusercontent.com/cavestri/puzzle/master/puzzle.JPG "Awesome Puzzle!")
 
 A simple Puzzle game made with Jquery.
 
@@ -15,7 +15,7 @@ Just change the block position using the mouse pointer to clicking on them.
 On Line Version
 =============
 
-You can check a live version [here](http://codenatic.com/projects/puzzle/) 
+You can check a live version [here](http://codenatic.com/demos/puzzle/) 
 
 **Have Fun!**
 
@@ -24,7 +24,7 @@ Licence
 
 The MIT License (MIT)
 
-Copyright (c) 2015 Franco Cavestri
+Copyright (c) 2017 Franco Cavestri
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
