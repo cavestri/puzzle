@@ -12,11 +12,6 @@ Usage
 
 Just change the block position using the mouse pointer to clicking on them.
 
-On Line Version
-=============
-
-You can check a live version [here](http://codenatic.com/demos/puzzle/) 
-
 **Have Fun!**
 
 Licence
