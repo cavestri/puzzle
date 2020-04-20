@@ -7,6 +7,8 @@ A simple Puzzle game made with Jquery.
 
 I have made this Puzzle game just for fun, i'm pretty sure that the logic can be improved a lot but... 
 
+**DEMO:** http://cavestri.github.io/puzzle/
+
 Usage
 =====
 
